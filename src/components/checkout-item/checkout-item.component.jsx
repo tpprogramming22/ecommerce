@@ -7,7 +7,7 @@ import { CartContext } from "../../contexts/cart.context";
 const CheckoutItem = ({ cartItem }) => {
   const { clearItemFromCart, addItemToCart, removeItemFromCart } =
     useContext(CartContext);
-  const clearProductFromCart = () => clearItemFromCart(cartItem);
+  const clearItemFromCartHandler = () => clearItemFromCart(cartItem);
   const addItemToCartHandler = () => addItemToCart(cartItem);
   const removeItemFromCartHandler = () => removeItemFromCart(cartItem);
 
@@ -29,7 +29,7 @@ const CheckoutItem = ({ cartItem }) => {
         </div>
       </span>
       <span className="price">{price}</span>
-      <div className="remove-button" onClick={clearProductFromCart}>
+      <div className="remove-button" onClick={clearItemFromCartHandler}>
         &#10005;
       </div>
     </div>
