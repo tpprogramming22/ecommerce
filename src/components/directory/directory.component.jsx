@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import DirectoryItem from '../directory-item/directory-item.component'
 import './directory.styles.scss';
 
@@ -36,11 +37,16 @@ const categories = [
 
 const Directory = () => {
   return (
+    <Fragment>
+    <h1 className='header-title'>TED OUTFITTERS</h1>
     <div className='directory-container'>
       {categories.map((category) => (
         <DirectoryItem key={category.id} category={category} />
       ))}
     </div>
+
+    <p className='construction-tag'>This website is still under construction</p>
+    </Fragment>
   );
 };
 

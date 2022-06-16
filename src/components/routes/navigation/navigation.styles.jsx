@@ -7,6 +7,8 @@ export const NavigationContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  background-color: white;
+  border-radius: 20px
 `;
 
 export const LogoContainer = styled(Link)`
@@ -21,9 +23,17 @@ width: 50%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    
 `;
 
 export const NavLink = styled(Link)`
 padding: 10px 15px;
       cursor: pointer;
+`
+
+export const NavTitle = styled.div`
+height: 70%;
+display: flex;
+text-align: center;
+justify-content: center;
 `

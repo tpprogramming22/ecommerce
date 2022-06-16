@@ -17,7 +17,7 @@ const DirectoryItem = ({ category }) => {
           <BackgroundImage
           imageUrl={imageUrl}/>
           <Body>
-            <h2>{title}</h2>
+            <h2>{title.toUpperCase()}</h2>
             <p>SHOP NOW</p>
           </Body>
 

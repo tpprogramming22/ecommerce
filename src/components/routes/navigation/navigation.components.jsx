@@ -5,7 +5,7 @@ import { UserContext } from "../../../contexts/user.context";
 import { signOutUser } from "../../../utils/firebase/firebase.utils";
 import CartIcon from "../../cart-icon/cart-icon.component";
 import CartDropdown from "../../cart-dropdown/cart-dropdown.component";
-import { NavigationContainer, LogoContainer, NavLinksContainer, NavLink } from "./navigation.styles";
+import { NavigationContainer, LogoContainer, NavLinksContainer, NavLink, NavTitle } from "./navigation.styles";
 import { CartContext } from "../../../contexts/cart.context";
 
 const Navigation = () => {
@@ -20,7 +20,7 @@ const Navigation = () => {
         <LogoContainer to="/">
           <TedLogo/>
         </LogoContainer>
-
+        
         <NavLinksContainer>
           <NavLink to="/shop">
             SHOP

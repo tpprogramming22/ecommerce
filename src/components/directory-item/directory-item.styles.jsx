@@ -6,6 +6,7 @@ export const BackgroundImage = styled.div`
   background-size: cover;
   background-position: center;
   background-image: ${({imageUrl}) => `url(${imageUrl})`};
+  border-radius: 25px;
 `;
 export const Body = styled.div`
   height: 90px;
@@ -14,7 +15,8 @@ export const Body = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  // border: 1px solid black;
+  border-radius: 4px;
   background-color: white;
   opacity: 0.7;
   position: absolute;
@@ -31,12 +33,13 @@ export const Body = styled.div`
 `;
 export const DirectoryItemContainer = styled.div`
 min-width: 30%;
+border-radius: 25px;
 height: 240px;
 flex: 1 1 auto;
 display: flex;
 align-items: center;
 justify-content: center;
-border: 1px solid black;
+// border: 1px solid black;
 margin: 0 7.5px 15px;
 overflow: hidden;
 &:hover {
