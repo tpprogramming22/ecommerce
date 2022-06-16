@@ -1,6 +1,6 @@
 import { Fragment, useContext } from "react";
 import { Routes, Route, Outlet, Link } from "react-router-dom";
-import { ReactComponent as TedLogo } from "../../../assets/clothes-svgrepo-com.svg";
+import { ReactComponent as TedLogo } from "../../../assets/myownlogo.svg";
 import { UserContext } from "../../../contexts/user.context";
 import { signOutUser } from "../../../utils/firebase/firebase.utils";
 import CartIcon from "../../cart-icon/cart-icon.component";
@@ -18,7 +18,7 @@ const Navigation = () => {
     <Fragment>
       <NavigationContainer>
         <LogoContainer to="/">
-          <TedLogo className="logo" />
+          <TedLogo/>
         </LogoContainer>
 
         <NavLinksContainer>
