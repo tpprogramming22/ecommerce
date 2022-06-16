@@ -46,6 +46,7 @@ const Directory = () => {
     </div>
 
     <p className='construction-tag'>This website is still under construction</p>
+    <p className='construction-tag'>Not yet available for phones</p>
     </Fragment>
   );
 };
